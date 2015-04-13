@@ -1,0 +1,71 @@
+<Solution>
+  <PropertyGroup Name="SushiNeko-Cpp" Version="2.2.1.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="HelloWorld.png" />
+        <Folder Name="Assets">
+          <Folder Name="resources-phone">
+            <Image Name="background.png" />
+            <Image Name="button.png" />
+            <Image Name="character1.png" />
+            <Image Name="character2.png" />
+            <Image Name="character3.png" />
+            <Image Name="chopstick.png" />
+            <Image Name="life.png" />
+            <Image Name="life_bg.png" />
+            <Image Name="mat.png" />
+            <Image Name="roll.png" />
+            <Image Name="tap_left.png" />
+            <Image Name="tap_right.png" />
+          </Folder>
+          <Folder Name="resources-phonehd">
+            <Image Name="background.png" />
+            <Image Name="button.png" />
+            <Image Name="character1.png" />
+            <Image Name="character2.png" />
+            <Image Name="character3.png" />
+            <Image Name="chopstick.png" />
+            <Image Name="life.png" />
+            <Image Name="life_bg.png" />
+            <Image Name="mat.png" />
+            <Image Name="roll.png" />
+            <Image Name="tap_left.png" />
+            <Image Name="tap_right.png" />
+          </Folder>
+          <Folder Name="resources-tablet">
+            <Image Name="background.png" />
+            <Image Name="button.png" />
+            <Image Name="character1.png" />
+            <Image Name="character2.png" />
+            <Image Name="character3.png" />
+            <Image Name="chopstick.png" />
+            <Image Name="life.png" />
+            <Image Name="life_bg.png" />
+            <Image Name="mat.png" />
+            <Image Name="roll.png" />
+            <Image Name="tap_left.png" />
+            <Image Name="tap_right.png" />
+          </Folder>
+          <Folder Name="resources-tablethd">
+            <Image Name="background.png" />
+            <Image Name="button.png" />
+            <Image Name="character1.png" />
+            <Image Name="character2.png" />
+            <Image Name="character3.png" />
+            <Image Name="chopstick.png" />
+            <Image Name="life.png" />
+            <Image Name="life_bg.png" />
+            <Image Name="mat.png" />
+            <Image Name="roll.png" />
+            <Image Name="tap_left.png" />
+            <Image Name="tap_right.png" />
+          </Folder>
+        </Folder>
+        <Project Name="Character.csd" Type="Node" />
+        <Project Name="Piece.csd" Type="Node" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
