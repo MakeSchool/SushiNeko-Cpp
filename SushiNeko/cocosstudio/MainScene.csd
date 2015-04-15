@@ -3,7 +3,7 @@
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
-      <ObjectData Name="Scene" FrameEvent="" ctype="SingleNodeObjectData">
+      <ObjectData Name="Scene" FrameEvent="" RightMargin="-640.0000" TopMargin="-960.0000" ctype="SingleNodeObjectData">
         <Position X="0.0000" Y="0.0000" />
         <Scale ScaleX="1.0000" ScaleY="1.0000" />
         <AnchorPoint />
@@ -12,15 +12,90 @@
         <PrePosition X="0.0000" Y="0.0000" />
         <PreSize X="0.0000" Y="0.0000" />
         <Children>
-          <NodeObjectData Name="Default" ActionTag="-620272433" FrameEvent="" Tag="5" ObjectIndex="3" ctype="SpriteObjectData">
-            <Position X="320.0000" Y="480.0000" />
+          <NodeObjectData Name="background" ActionTag="263372952" FrameEvent="" Tag="30" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-64.0000" RightMargin="-64.0000" TopMargin="-176.0000" ctype="SpriteObjectData">
+            <Position X="320.0000" Y="0.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <AnchorPoint ScaleX="0.5000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Size X="768.0000" Y="1136.0000" />
+            <PrePosition X="0.5000" Y="0.0000" />
+            <PreSize X="1.2000" Y="1.1833" />
+            <FileData Type="Normal" Path="Assets/resources-phonehd/background.png" />
+          </NodeObjectData>
+          <NodeObjectData Name="piece" ActionTag="1035923380" FrameEvent="" Tag="31" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="790.0000" BottomMargin="170.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Position X="320.0000" Y="170.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <AnchorPoint />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Size X="0.0000" Y="0.0000" />
+            <PrePosition X="0.5000" Y="0.1771" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="Piece.csd" />
+          </NodeObjectData>
+          <NodeObjectData Name="cat" ActionTag="951755214" FrameEvent="" Tag="35" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="730.0000" BottomMargin="230.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Position X="320.0000" Y="230.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <AnchorPoint />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Size X="0.0000" Y="0.0000" />
+            <PrePosition X="0.5000" Y="0.2396" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="Character.csd" />
+          </NodeObjectData>
+          <NodeObjectData Name="play" ActionTag="735938060" FrameEvent="" Tag="45" PositionPercentXEnabled="True" LeftMargin="218.5000" RightMargin="218.5000" TopMargin="813.0000" BottomMargin="21.0000" TouchEnable="True" FontSize="14" ButtonText="" Scale9Width="203" Scale9Height="126" ctype="ButtonObjectData">
+            <Position X="320.0000" Y="84.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <Size X="640.0000" Y="960.0000" />
-            <PrePosition X="0.5000" Y="0.5000" />
+            <Size X="203.0000" Y="126.0000" />
+            <PrePosition X="0.5000" Y="0.0875" />
+            <PreSize X="0.3172" Y="0.1312" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Normal" Path="Assets/resources-phonehd/button.png" />
+            <PressedFileData Type="Normal" Path="Assets/resources-phonehd/button.png" />
+            <NormalFileData Type="Normal" Path="Assets/resources-phonehd/button.png" />
+          </NodeObjectData>
+          <NodeObjectData Name="lifeBG" ActionTag="-225586348" FrameEvent="" Tag="46" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="166.5000" RightMargin="166.5000" TopMargin="19.2000" BottomMargin="858.8000" ctype="SpriteObjectData">
+            <Position X="320.0000" Y="940.8000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Size X="307.0000" Y="82.0000" />
+            <PrePosition X="0.5000" Y="0.9800" />
+            <PreSize X="0.4797" Y="0.0854" />
+            <Children>
+              <NodeObjectData Name="lifeBar" ActionTag="523644030" FrameEvent="" Tag="47" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="17.5000" RightMargin="17.5000" TopMargin="16.5000" BottomMargin="16.5000" ctype="SpriteObjectData">
+                <Position X="153.5000" Y="41.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <Size X="272.0000" Y="49.0000" />
+                <PrePosition X="0.5000" Y="0.5000" />
+                <PreSize X="0.8860" Y="0.5976" />
+                <FileData Type="Normal" Path="Assets/resources-phonehd/life.png" />
+              </NodeObjectData>
+            </Children>
+            <FileData Type="Normal" Path="Assets/resources-phonehd/life_bg.png" />
+          </NodeObjectData>
+          <NodeObjectData Name="tapRight" ActionTag="-1223049060" FrameEvent="" Tag="48" PositionPercentXEnabled="True" LeftMargin="451.0000" TopMargin="837.5000" BottomMargin="45.5000" ctype="SpriteObjectData">
+            <Position X="640.0000" Y="84.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <AnchorPoint ScaleX="1.0000" ScaleY="0.5000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Size X="189.0000" Y="77.0000" />
+            <PrePosition X="1.0000" Y="0.0875" />
+            <PreSize X="0.2953" Y="0.0802" />
+            <FileData Type="Normal" Path="Assets/resources-phonehd/tap_right.png" />
+          </NodeObjectData>
+          <NodeObjectData Name="tapLeft" ActionTag="1169502385" FrameEvent="" Tag="52" RightMargin="451.0000" TopMargin="837.5000" BottomMargin="45.5000" ctype="SpriteObjectData">
+            <Position X="0.0000" Y="84.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <AnchorPoint ScaleY="0.5000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Size X="189.0000" Y="77.0000" />
+            <PrePosition X="0.0000" Y="0.0875" />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="HelloWorld.png" />
+            <FileData Type="Normal" Path="Assets/resources-phonehd/tap_left.png" />
           </NodeObjectData>
         </Children>
       </ObjectData>

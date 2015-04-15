@@ -47,10 +47,10 @@
         <PrePosition X="0.0000" Y="0.0000" />
         <PreSize X="0.0000" Y="0.0000" />
         <Children>
-          <NodeObjectData Name="Neko" ActionTag="1871043589" FrameEvent="" Tag="4" LeftMargin="-182.5000" RightMargin="-182.5000" TopMargin="-108.5000" BottomMargin="-108.5000" ctype="SpriteObjectData">
+          <NodeObjectData Name="Cat" ActionTag="1871043589" FrameEvent="" Tag="4" LeftMargin="-365.0000" TopMargin="-217.0000" ctype="SpriteObjectData">
             <Position X="0.0000" Y="0.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <AnchorPoint ScaleX="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <Size X="365.0000" Y="217.0000" />
             <PrePosition X="0.0000" Y="0.0000" />
