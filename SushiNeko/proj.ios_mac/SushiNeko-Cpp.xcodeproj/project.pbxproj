@@ -51,6 +51,10 @@
 		65D114141ADED79000670D1A /* Piece.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D114111ADED79000670D1A /* Piece.cpp */; };
 		65D114171ADED8A000670D1A /* PieceReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D114151ADED8A000670D1A /* PieceReader.cpp */; };
 		65D114181ADED8A000670D1A /* PieceReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D114151ADED8A000670D1A /* PieceReader.cpp */; };
+		65D1141B1ADEDDF400670D1A /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D114191ADEDDF400670D1A /* Character.cpp */; };
+		65D1141C1ADEDDF400670D1A /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D114191ADEDDF400670D1A /* Character.cpp */; };
+		65D1141F1ADEDE5200670D1A /* CharacterReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D1141D1ADEDE5200670D1A /* CharacterReader.cpp */; };
+		65D114201ADEDE5200670D1A /* CharacterReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D1141D1ADEDE5200670D1A /* CharacterReader.cpp */; };
 		66C94796BE5041DEBAD65C49 /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3014FEF88BC17BF379EDC40 /* libcocos2d iOS.a */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		AA7346ABA8993D086301DA8E /* res in Resources */ = {isa = PBXBuildFile; fileRef = E4E9495E93D700EF88A10783 /* res */; };
@@ -114,6 +118,10 @@
 		65D114121ADED79000670D1A /* Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Piece.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		65D114151ADED8A000670D1A /* PieceReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PieceReader.cpp; sourceTree = "<group>"; };
 		65D114161ADED8A000670D1A /* PieceReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieceReader.h; sourceTree = "<group>"; };
+		65D114191ADEDDF400670D1A /* Character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Character.cpp; sourceTree = "<group>"; };
+		65D1141A1ADEDDF400670D1A /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		65D1141D1ADEDE5200670D1A /* CharacterReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharacterReader.cpp; sourceTree = "<group>"; };
+		65D1141E1ADEDE5200670D1A /* CharacterReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterReader.h; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -255,10 +263,14 @@
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* MainScene.cpp */,
 				46880B8719C43A87006E1F66 /* MainScene.h */,
-				65D114151ADED8A000670D1A /* PieceReader.cpp */,
-				65D114161ADED8A000670D1A /* PieceReader.h */,
+				65D114191ADEDDF400670D1A /* Character.cpp */,
+				65D1141A1ADEDDF400670D1A /* Character.h */,
+				65D1141D1ADEDE5200670D1A /* CharacterReader.cpp */,
+				65D1141E1ADEDE5200670D1A /* CharacterReader.h */,
 				65D114111ADED79000670D1A /* Piece.cpp */,
 				65D114121ADED79000670D1A /* Piece.h */,
+				65D114151ADED8A000670D1A /* PieceReader.cpp */,
+				65D114161ADED8A000670D1A /* PieceReader.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -435,8 +447,10 @@
 				65D114171ADED8A000670D1A /* PieceReader.cpp in Sources */,
 				65D114131ADED79000670D1A /* Piece.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				65D1141B1ADEDDF400670D1A /* Character.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* MainScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				65D1141F1ADEDE5200670D1A /* CharacterReader.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
@@ -446,9 +460,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D114201ADEDE5200670D1A /* CharacterReader.cpp in Sources */,
 				65D114181ADED8A000670D1A /* PieceReader.cpp in Sources */,
 				65D114141ADED79000670D1A /* Piece.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				65D1141C1ADEDDF400670D1A /* Character.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* MainScene.cpp in Sources */,
 			);
