@@ -4,7 +4,6 @@
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Project Name="MainScene.csd" Type="Scene" />
-        <Image Name="HelloWorld.png" />
         <Folder Name="Assets">
           <Folder Name="resources-phone">
             <Image Name="background.png" />
