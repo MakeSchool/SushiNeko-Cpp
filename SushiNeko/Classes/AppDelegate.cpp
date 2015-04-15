@@ -26,20 +26,42 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
-    if(!glview) {
-        glview = GLViewImpl::createWithRect("SushiNeko-Cpp", Rect(0, 0, 640, 960));
+    if (!glview)
+    {
+        glview = GLViewImpl::createWithRect("GameOfLife", Rect(0, 0, 640, 960));
         director->setOpenGLView(glview);
     }
-
+    
+    cocos2d::Size designSize = glview->getDesignResolutionSize();
+    
     director->getOpenGLView()->setDesignResolutionSize(640, 960, ResolutionPolicy::SHOW_ALL);
-
+    
     // turn on display FPS
     director->setDisplayStats(true);
-
+    
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
-
+    
     FileUtils::getInstance()->addSearchPath("res");
+    
+    std::vector<std::string> searchResolutionsOrder(1);
+    
+    if (designSize.height < 481.0f)
+    {
+        searchResolutionsOrder[0] = "resources-phone";
+    }
+    else if (designSize.height < 1137.0f)
+    {
+        searchResolutionsOrder[0] = "resources-phonehd";
+    }
+    else
+    {
+        searchResolutionsOrder[0] = "resources-tablethd";
+    }
+    
+    FileUtils::getInstance()->setSearchResolutionsOrder(searchResolutionsOrder);
+    
+    auto setResolutions = FileUtils::getInstance()->getSearchResolutionsOrder();
 
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();
