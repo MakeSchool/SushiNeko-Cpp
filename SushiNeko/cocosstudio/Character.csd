@@ -32,13 +32,13 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="chop" StartIndex="1" EndIndex="2">
-          <RenderColor A="150" R="144" G="238" B="144" />
+          <RenderColor A="255" R="144" G="238" B="144" />
         </AnimationInfo>
         <AnimationInfo Name="default" StartIndex="0" EndIndex="0">
-          <RenderColor A="150" R="112" G="128" B="144" />
+          <RenderColor A="255" R="112" G="128" B="144" />
         </AnimationInfo>
       </AnimationList>
-      <ObjectData Name="Node" FrameEvent="" ctype="SingleNodeObjectData">
+      <ObjectData Name="Node" FrameEvent="" CustomClassName="Character" ctype="SingleNodeObjectData">
         <Position X="0.0000" Y="0.0000" />
         <Scale ScaleX="1.0000" ScaleY="1.0000" />
         <AnchorPoint />

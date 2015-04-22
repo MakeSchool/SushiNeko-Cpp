@@ -32,7 +32,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="Piece.csd" />
           </NodeObjectData>
-          <NodeObjectData Name="cat" ActionTag="951755214" FrameEvent="" Tag="35" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="730.0000" BottomMargin="230.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <NodeObjectData Name="characterNode" ActionTag="951755214" FrameEvent="" Tag="35" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="730.0000" BottomMargin="230.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
             <Position X="320.0000" Y="230.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <AnchorPoint />
@@ -64,13 +64,13 @@
             <PrePosition X="0.5000" Y="0.9800" />
             <PreSize X="0.4797" Y="0.0854" />
             <Children>
-              <NodeObjectData Name="lifeBar" ActionTag="523644030" FrameEvent="" Tag="47" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="17.5000" RightMargin="17.5000" TopMargin="16.5000" BottomMargin="16.5000" ctype="SpriteObjectData">
-                <Position X="153.5000" Y="41.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+              <NodeObjectData Name="lifeBar" ActionTag="523644030" FrameEvent="" Tag="47" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="17.4990" RightMargin="17.5010" TopMargin="16.5000" BottomMargin="16.5000" ctype="SpriteObjectData">
+                <Position X="17.4990" Y="41.0000" />
+                <Scale ScaleX="0.5000" ScaleY="1.0000" />
+                <AnchorPoint ScaleY="0.5000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <Size X="272.0000" Y="49.0000" />
-                <PrePosition X="0.5000" Y="0.5000" />
+                <PrePosition X="0.0570" Y="0.5000" />
                 <PreSize X="0.8860" Y="0.5976" />
                 <FileData Type="Normal" Path="Assets/resources-phonehd/life.png" />
               </NodeObjectData>

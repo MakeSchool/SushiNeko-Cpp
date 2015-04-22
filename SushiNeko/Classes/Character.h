@@ -11,12 +11,20 @@
 
 #include "cocos2d.h"
 
-class Character : public cocos2d::Sprite
+enum class Side;  // forward declaration for Side enum, declared in MainScene.h
+
+class Character : public cocos2d::Node
+
 {
 public:
     virtual bool init() override;
     
     CREATE_FUNC(Character);
+    
+    void setSide(Side side);
+    
+private:
+    Side side;
 };
 
 #endif /* defined(__SushiNeko_Cpp__Character__) */

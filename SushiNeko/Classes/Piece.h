@@ -10,11 +10,11 @@
 #define __SushiNeko_Cpp__Piece__
 
 #include "cocos2d.h"
-#include "MainScene.h"
+
+enum class Side;  //forward declaration of Side enum from MainScene.h
 
 class Piece : public cocos2d::Node
 {
-
 public:
     virtual bool init() override;
     

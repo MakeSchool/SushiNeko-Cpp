@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
+#include "Piece.h"
 
 enum class Side
 {
@@ -19,6 +20,9 @@ enum class GameState
     GameOver
 };
 
+// forward declarations
+class Character;
+
 class MainScene : public cocos2d::Layer
 {
 public:
@@ -26,12 +30,27 @@ public:
     static cocos2d::Scene* createScene();
 
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
-    virtual bool init();
+    virtual bool init() override;
 
     // implement the "static create()" method manually
     CREATE_FUNC(MainScene);
     
+    virtual void onEnter() override;
+    
+    virtual void onExit() override;
+    
+    virtual void update(float dt) override;
+    
 private:
+    
+    void setupTouchHandling();
+    
+    void triggerReady();
+    void triggerPlaying();
+    void triggerGameOver();
+    
+    void setTimeLeft(float timeLeft);
+    
     float timeLeft;
     int score;
     int pieceIndex;
@@ -40,10 +59,9 @@ private:
     
     cocos2d::Sprite* timeBar;
     cocos2d::ui::Text* scoreLabel;
+    Character* character;
     
-//    cocos2d::Vector<<#class T#>>
-
-    
+    cocos2d::Vector<Piece*> pieces;
 };
 
 #endif // __MAIN_SCENE_H__

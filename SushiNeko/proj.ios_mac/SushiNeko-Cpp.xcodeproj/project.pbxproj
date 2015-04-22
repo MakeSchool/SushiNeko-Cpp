@@ -259,18 +259,18 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				46880B8619C43A87006E1F66 /* MainScene.cpp */,
+				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8719C43A87006E1F66 /* MainScene.h */,
-				65D114191ADEDDF400670D1A /* Character.cpp */,
+				46880B8619C43A87006E1F66 /* MainScene.cpp */,
 				65D1141A1ADEDDF400670D1A /* Character.h */,
-				65D1141D1ADEDE5200670D1A /* CharacterReader.cpp */,
+				65D114191ADEDDF400670D1A /* Character.cpp */,
 				65D1141E1ADEDE5200670D1A /* CharacterReader.h */,
-				65D114111ADED79000670D1A /* Piece.cpp */,
+				65D1141D1ADEDE5200670D1A /* CharacterReader.cpp */,
 				65D114121ADED79000670D1A /* Piece.h */,
-				65D114151ADED8A000670D1A /* PieceReader.cpp */,
+				65D114111ADED79000670D1A /* Piece.cpp */,
 				65D114161ADED8A000670D1A /* PieceReader.h */,
+				65D114151ADED8A000670D1A /* PieceReader.cpp */,
 			);
 			name = Classes;
 			path = ../Classes;
