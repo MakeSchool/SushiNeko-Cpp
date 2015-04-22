@@ -49,8 +49,11 @@ private:
     void triggerPlaying();
     void triggerGameOver();
     
+    void stepTower();
     void setTimeLeft(float timeLeft);
+    void setScore(int score);
     Side getSideForObstacle(Side lastSide);
+    bool checkGameOver();
     
     float timeLeft;
     int score;

@@ -64,6 +64,7 @@
         </Folder>
         <Project Name="Character.csd" Type="Node" />
         <Project Name="Piece.csd" Type="Node" />
+        <File Name="Game of Three.ttf" />
       </RootFolder>
     </Group>
   </SolutionFolder>

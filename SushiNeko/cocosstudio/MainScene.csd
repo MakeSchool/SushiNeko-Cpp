@@ -106,6 +106,16 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="Assets/resources-phonehd/tap_left.png" />
           </NodeObjectData>
+          <NodeObjectData Name="scoreLabel" ActionTag="-1096669189" FrameEvent="" Tag="101" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="274.5000" RightMargin="274.5000" TopMargin="324.5000" BottomMargin="612.5000" FontSize="100" LabelText="0&#xA;" ctype="TextObjectData">
+            <Position X="320.0000" Y="624.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Size X="54.0000" Y="115.0000" />
+            <PrePosition X="0.5000" Y="0.6500" />
+            <PreSize X="0.1422" Y="0.0240" />
+            <FontResource Type="Normal" Path="Game of Three.ttf" />
+          </NodeObjectData>
         </Children>
       </ObjectData>
     </Content>

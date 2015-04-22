@@ -23,6 +23,11 @@ bool Character::init()
     return true;
 }
 
+Side Character::getSide()
+{
+    return this->side;
+}
+
 void Character::setSide(Side side)
 {
     this->side = side;

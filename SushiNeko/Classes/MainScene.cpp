@@ -54,6 +54,7 @@ bool MainScene::init()
     this->timeBar = lifeBG->getChildByName<Sprite*>("lifeBar");
     this->character = rootNode->getChildByName<Character*>("character");
     this->pieceNode = rootNode->getChildByName("pieceNode");
+    this->scoreLabel = rootNode->getChildByName<cocos2d::ui::Text*>("scoreLabel");
     
     // Initialize the sushi pieces
     for (int i = 0; i < 10; ++i)
@@ -104,9 +105,21 @@ void MainScene::setupTouchHandling()
                     this->character->setSide(Side::Right);
                 }
                 
-                this->setTimeLeft(this->timeLeft + 0.25f);
-                this->score++;
+                if (this->checkGameOver())
+                {
+                    return true;
+                }
                 
+                // character animation
+                this->stepTower();
+                
+                if (this->checkGameOver())
+                {
+                    return true;
+                }
+                
+                this->setTimeLeft(this->timeLeft + 0.25f);
+                this->setScore(this->score + 1);
             }
                 break;
                 
@@ -165,8 +178,25 @@ void MainScene::update(float dt)
         case GameState::GameOver:
             break;
     }
-    
+}
 
+void MainScene::stepTower()
+{
+    Piece* currentPiece = this->pieces.at(this->pieceIndex);
+    
+    // add animated piece
+    
+    currentPiece->setPosition(currentPiece->getPosition() + Vec2(0.0f, currentPiece->getSpriteHeight() / 2.0f * 10.0f));
+    
+    currentPiece->setLocalZOrder(currentPiece->getLocalZOrder() + 1);
+    
+    currentPiece->setSide(this->getSideForObstacle(this->pieceLastSide));
+    this->pieceLastSide = currentPiece->getSide();
+    
+    cocos2d::MoveBy* moveAction = cocos2d::MoveBy::create(0.15f, Vec2(0.0f, -1.0f * currentPiece->getSpriteHeight() / 2.0f));
+    this->pieceNode->runAction(moveAction);
+    
+    this->pieceIndex = (this->pieceIndex + 1) % 10;
 }
 
 #pragma mark -
@@ -175,6 +205,8 @@ void MainScene::update(float dt)
 void MainScene::triggerReady()
 {
     this->gameState = GameState::Ready;
+    
+    
 }
 
 void MainScene::triggerPlaying()
@@ -201,6 +233,13 @@ void MainScene::setTimeLeft(float timeLeft)
     this->timeLeft = MIN(MAX(0.0f, timeLeft), 10.0f);
     
     this->timeBar->setScale(timeLeft / 10.0f, 1.0f);
+}
+
+void MainScene::setScore(int score)
+{
+    this->score = score;
+    
+    this->scoreLabel->setString(std::to_string(this->score));
 }
 
 #pragma mark -
@@ -237,4 +276,19 @@ Side MainScene::getSideForObstacle(Side lastSide)
     }
     
     return side;
+}
+
+bool MainScene::checkGameOver()
+{
+    bool gameOver = false;
+    
+    Piece* currentPiece = this->pieces.at(this->pieceIndex);
+    
+    if (currentPiece->getSide() == this->character->getSide())
+    {
+        gameOver = true;
+        this->triggerGameOver();
+    }
+    
+    return gameOver;
 }

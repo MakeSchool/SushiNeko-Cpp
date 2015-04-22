@@ -22,6 +22,7 @@ public:
     CREATE_FUNC(Character);
     
     void setSide(Side side);
+    Side getSide();
     
 private:
     Side side;
