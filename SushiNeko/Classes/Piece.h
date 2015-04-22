@@ -23,6 +23,8 @@ public:
     void setSide(Side side);
     Side getSide();
     
+    float getSpriteHeight();
+    
 private:
     Side side;
     

@@ -50,6 +50,7 @@ private:
     void triggerGameOver();
     
     void setTimeLeft(float timeLeft);
+    Side getSideForObstacle(Side lastSide);
     
     float timeLeft;
     int score;
@@ -60,6 +61,7 @@ private:
     cocos2d::Sprite* timeBar;
     cocos2d::ui::Text* scoreLabel;
     Character* character;
+    cocos2d::Node* pieceNode;
     
     cocos2d::Vector<Piece*> pieces;
 };

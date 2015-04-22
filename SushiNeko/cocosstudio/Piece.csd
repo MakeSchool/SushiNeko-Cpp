@@ -48,16 +48,16 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="default" StartIndex="0" EndIndex="0">
-          <RenderColor A="150" R="0" G="139" B="139" />
+          <RenderColor A="255" R="0" G="139" B="139" />
         </AnimationInfo>
         <AnimationInfo Name="moveRight" StartIndex="1" EndIndex="48">
-          <RenderColor A="150" R="72" G="209" B="204" />
+          <RenderColor A="255" R="72" G="209" B="204" />
         </AnimationInfo>
         <AnimationInfo Name="moveLeft" StartIndex="49" EndIndex="96">
-          <RenderColor A="150" R="186" G="85" B="211" />
+          <RenderColor A="255" R="186" G="85" B="211" />
         </AnimationInfo>
       </AnimationList>
-      <ObjectData Name="Node" FrameEvent="" Tag="25" ctype="SingleNodeObjectData">
+      <ObjectData Name="Node" FrameEvent="" CustomClassName="Piece" Tag="25" ctype="SingleNodeObjectData">
         <Position X="0.0000" Y="0.0000" />
         <Scale ScaleX="1.0000" ScaleY="1.0000" />
         <AnchorPoint />
@@ -66,7 +66,7 @@
         <PrePosition X="0.0000" Y="0.0000" />
         <PreSize X="0.0000" Y="0.0000" />
         <Children>
-          <NodeObjectData Name="VerticalMovement" ActionTag="1905113067" FrameEvent="" Tag="27" IconVisible="True" ctype="SingleNodeObjectData">
+          <NodeObjectData Name="verticalMovement" ActionTag="1905113067" FrameEvent="" Tag="27" IconVisible="True" ctype="SingleNodeObjectData">
             <Position X="0.0000" Y="0.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <AnchorPoint />
@@ -75,7 +75,7 @@
             <PrePosition X="0.0000" Y="0.0000" />
             <PreSize X="0.0000" Y="0.0000" />
             <Children>
-              <NodeObjectData Name="Roll" ActionTag="-1903783200" FrameEvent="" Tag="26" LeftMargin="-105.0000" RightMargin="-105.0000" TopMargin="-245.0000" ctype="SpriteObjectData">
+              <NodeObjectData Name="roll" ActionTag="-1903783200" FrameEvent="" Tag="26" LeftMargin="-105.0000" RightMargin="-105.0000" TopMargin="-245.0000" ctype="SpriteObjectData">
                 <Position X="0.0000" Y="0.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <AnchorPoint ScaleX="0.5000" />
@@ -83,6 +83,28 @@
                 <Size X="210.0000" Y="245.0000" />
                 <PrePosition X="0.0000" Y="0.0000" />
                 <PreSize X="0.0000" Y="0.0000" />
+                <Children>
+                  <NodeObjectData Name="leftChopstick" ActionTag="1635623192" VisibleForFrame="False" FrameEvent="" Tag="84" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-210.0000" RightMargin="210.0000" TopMargin="101.5000" BottomMargin="52.5000" ctype="SpriteObjectData">
+                    <Position X="0.0000" Y="98.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <AnchorPoint ScaleX="1.0000" ScaleY="0.5000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <Size X="210.0000" Y="91.0000" />
+                    <PrePosition X="0.0000" Y="0.4000" />
+                    <PreSize X="1.0000" Y="0.3714" />
+                    <FileData Type="Normal" Path="Assets/resources-phonehd/chopstick.png" />
+                  </NodeObjectData>
+                  <NodeObjectData Name="rightChopstick" ActionTag="-2068788225" VisibleForFrame="False" FrameEvent="" Tag="89" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="210.0000" RightMargin="-210.0000" TopMargin="101.5000" BottomMargin="52.5000" FlipX="True" ctype="SpriteObjectData">
+                    <Position X="210.0000" Y="98.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <Size X="210.0000" Y="91.0000" />
+                    <PrePosition X="1.0000" Y="0.4000" />
+                    <PreSize X="1.0000" Y="0.3714" />
+                    <FileData Type="Normal" Path="Assets/resources-phonehd/chopstick.png" />
+                  </NodeObjectData>
+                </Children>
                 <FileData Type="Normal" Path="Assets/resources-phonehd/roll.png" />
               </NodeObjectData>
             </Children>

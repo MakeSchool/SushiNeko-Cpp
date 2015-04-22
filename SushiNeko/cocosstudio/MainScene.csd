@@ -32,7 +32,16 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="Piece.csd" />
           </NodeObjectData>
-          <NodeObjectData Name="characterNode" ActionTag="951755214" FrameEvent="" Tag="35" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="730.0000" BottomMargin="230.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <NodeObjectData Name="pieceNode" ActionTag="-775825522" FrameEvent="" Tag="95" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="674.0000" BottomMargin="286.0000" ctype="SingleNodeObjectData">
+            <Position X="320.0000" Y="286.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <AnchorPoint />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Size X="0.0000" Y="0.0000" />
+            <PrePosition X="0.5000" Y="0.2979" />
+            <PreSize X="0.0000" Y="0.0000" />
+          </NodeObjectData>
+          <NodeObjectData Name="character" ActionTag="951755214" FrameEvent="" Tag="35" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="730.0000" BottomMargin="230.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
             <Position X="320.0000" Y="230.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <AnchorPoint />
