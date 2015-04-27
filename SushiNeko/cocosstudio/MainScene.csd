@@ -2,7 +2,34 @@
   <PropertyGroup Type="Scene" Name="MainScene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="2.2.1.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="0" Speed="1.0000" />
+      <Animation Duration="11" Speed="1.0000" ActivedAnimationName="ready">
+        <Timeline ActionTag="735938060" Property="VisibleForFrame">
+          <BoolFrame FrameIndex="0" Tween="False" Value="True" />
+          <BoolFrame FrameIndex="11" Tween="False" Value="False" />
+        </Timeline>
+        <Timeline ActionTag="-1223049060" Property="VisibleForFrame">
+          <BoolFrame FrameIndex="1" Tween="False" Value="False" />
+          <BoolFrame FrameIndex="11" Tween="False" Value="True" />
+        </Timeline>
+        <Timeline ActionTag="1169502385" Property="VisibleForFrame">
+          <BoolFrame FrameIndex="1" Tween="False" Value="False" />
+          <BoolFrame FrameIndex="11" Tween="False" Value="True" />
+        </Timeline>
+        <Timeline ActionTag="-1096669189" Property="VisibleForFrame">
+          <BoolFrame FrameIndex="1" Tween="False" Value="False" />
+        </Timeline>
+      </Animation>
+      <AnimationList>
+        <AnimationInfo Name="default" StartIndex="0" EndIndex="0">
+          <RenderColor A="150" R="0" G="255" B="127" />
+        </AnimationInfo>
+        <AnimationInfo Name="title" StartIndex="1" EndIndex="10">
+          <RenderColor A="150" R="100" G="149" B="237" />
+        </AnimationInfo>
+        <AnimationInfo Name="ready" StartIndex="11" EndIndex="20">
+          <RenderColor A="150" R="255" G="0" B="255" />
+        </AnimationInfo>
+      </AnimationList>
       <ObjectData Name="Scene" FrameEvent="" RightMargin="-640.0000" TopMargin="-960.0000" ctype="SingleNodeObjectData">
         <Position X="0.0000" Y="0.0000" />
         <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -51,7 +78,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="Character.csd" />
           </NodeObjectData>
-          <NodeObjectData Name="play" ActionTag="735938060" FrameEvent="" Tag="45" PositionPercentXEnabled="True" LeftMargin="218.5000" RightMargin="218.5000" TopMargin="813.0000" BottomMargin="21.0000" TouchEnable="True" FontSize="14" ButtonText="" Scale9Width="203" Scale9Height="126" ctype="ButtonObjectData">
+          <NodeObjectData Name="play" ActionTag="735938060" FrameEvent="" Tag="45" PositionPercentXEnabled="True" LeftMargin="218.5000" RightMargin="218.5000" TopMargin="813.0000" BottomMargin="21.0000" FontSize="14" ButtonText="" Scale9Width="203" Scale9Height="126" ctype="ButtonObjectData">
             <Position X="320.0000" Y="84.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -86,7 +113,7 @@
             </Children>
             <FileData Type="Normal" Path="Assets/resources-phonehd/life_bg.png" />
           </NodeObjectData>
-          <NodeObjectData Name="tapRight" ActionTag="-1223049060" FrameEvent="" Tag="48" PositionPercentXEnabled="True" LeftMargin="451.0000" TopMargin="837.5000" BottomMargin="45.5000" ctype="SpriteObjectData">
+          <NodeObjectData Name="tapRight" ActionTag="-1223049060" VisibleForFrame="False" FrameEvent="" Tag="48" PositionPercentXEnabled="True" LeftMargin="451.0000" TopMargin="837.5000" BottomMargin="45.5000" ctype="SpriteObjectData">
             <Position X="640.0000" Y="84.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <AnchorPoint ScaleX="1.0000" ScaleY="0.5000" />
@@ -96,7 +123,7 @@
             <PreSize X="0.2953" Y="0.0802" />
             <FileData Type="Normal" Path="Assets/resources-phonehd/tap_right.png" />
           </NodeObjectData>
-          <NodeObjectData Name="tapLeft" ActionTag="1169502385" FrameEvent="" Tag="52" RightMargin="451.0000" TopMargin="837.5000" BottomMargin="45.5000" ctype="SpriteObjectData">
+          <NodeObjectData Name="tapLeft" ActionTag="1169502385" VisibleForFrame="False" FrameEvent="" Tag="52" RightMargin="451.0000" TopMargin="837.5000" BottomMargin="45.5000" ctype="SpriteObjectData">
             <Position X="0.0000" Y="84.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <AnchorPoint ScaleY="0.5000" />
@@ -106,7 +133,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="Assets/resources-phonehd/tap_left.png" />
           </NodeObjectData>
-          <NodeObjectData Name="scoreLabel" ActionTag="-1096669189" FrameEvent="" Tag="101" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="274.5000" RightMargin="274.5000" TopMargin="324.5000" BottomMargin="612.5000" FontSize="100" LabelText="0&#xA;" ctype="TextObjectData">
+          <NodeObjectData Name="scoreLabel" ActionTag="-1096669189" VisibleForFrame="False" FrameEvent="" Tag="101" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="274.5000" RightMargin="274.5000" TopMargin="324.5000" BottomMargin="612.5000" FontSize="100" LabelText="0&#xA;" ctype="TextObjectData">
             <Position X="320.0000" Y="624.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />

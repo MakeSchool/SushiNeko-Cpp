@@ -110,7 +110,8 @@ void MainScene::setupTouchHandling()
                     return true;
                 }
                 
-                // character animation
+                this->character->runHitAnimation();
+                
                 this->stepTower();
                 
                 if (this->checkGameOver())
@@ -136,6 +137,8 @@ void MainScene::setupTouchHandling()
 void MainScene::onEnter()
 {
     Layer::onEnter();
+    
+    this->flyingPiecePosition = this->pieceNode->getPosition();
     
     this->setupTouchHandling();
     
@@ -163,7 +166,7 @@ void MainScene::update(float dt)
             
         case GameState::Playing:
             
-            this->setTimeLeft(timeLeft - dt);
+//            this->setTimeLeft(timeLeft - dt);
             
             if (this->timeLeft <= 0.0f)
             {
@@ -184,7 +187,7 @@ void MainScene::stepTower()
 {
     Piece* currentPiece = this->pieces.at(this->pieceIndex);
     
-    // add animated piece
+    this->animateHitPiece(currentPiece->getSide());
     
     currentPiece->setPosition(currentPiece->getPosition() + Vec2(0.0f, currentPiece->getSpriteHeight() / 2.0f * 10.0f));
     
@@ -197,6 +200,28 @@ void MainScene::stepTower()
     this->pieceNode->runAction(moveAction);
     
     this->pieceIndex = (this->pieceIndex + 1) % 10;
+}
+
+void MainScene::animateHitPiece(Side obstacleSide)
+{
+    Piece* flyingPiece = dynamic_cast<Piece*>(CSLoader::createNode("Piece.csb"));
+    cocostudio::timeline::ActionTimeline* pieceTimeline = CSLoader::createTimeline("Piece.csb");
+    
+    pieceTimeline->setLastFrameCallFunc([flyingPiece]() {
+        flyingPiece->removeFromParent();
+    });
+    
+    flyingPiece->setSide(obstacleSide);
+    
+    flyingPiece->setPosition(this->flyingPiecePosition);
+    this->addChild(flyingPiece);
+    
+    Side characterSide = this->character->getSide();
+    
+    std::string animationName = (characterSide == Side::Left) ? std::string("moveRight") : std::string("moveLeft");
+    
+    flyingPiece->runAction(pieceTimeline);
+    pieceTimeline->play(animationName, false);
 }
 
 #pragma mark -

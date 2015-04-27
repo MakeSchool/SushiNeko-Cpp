@@ -50,6 +50,7 @@ private:
     void triggerGameOver();
     
     void stepTower();
+    void animateHitPiece(Side obstacleSide);
     void setTimeLeft(float timeLeft);
     void setScore(int score);
     Side getSideForObstacle(Side lastSide);
@@ -58,6 +59,7 @@ private:
     float timeLeft;
     int score;
     int pieceIndex;
+    cocos2d::Vec2 flyingPiecePosition;
     Side pieceLastSide;
     GameState gameState;
     

@@ -2,7 +2,7 @@
   <PropertyGroup Type="Node" Name="Character" ID="772772db-fc2d-4725-ba35-dd07c393c546" Version="2.2.1.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="2" Speed="1.0000" ActivedAnimationName="default">
+      <Animation Duration="3" Speed="0.5000" ActivedAnimationName="chop">
         <Timeline ActionTag="1871043589" Property="Position">
           <PointFrame FrameIndex="0" X="0.0000" Y="0.0000" />
           <PointFrame FrameIndex="1" X="0.0000" Y="0.0000" />
@@ -28,10 +28,13 @@
           <TextureFrame FrameIndex="2">
             <TextureFile Type="Normal" Path="Assets/resources-phonehd/character3.png" />
           </TextureFrame>
+          <TextureFrame FrameIndex="3">
+            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character1.png" />
+          </TextureFrame>
         </Timeline>
       </Animation>
       <AnimationList>
-        <AnimationInfo Name="chop" StartIndex="1" EndIndex="2">
+        <AnimationInfo Name="chop" StartIndex="1" EndIndex="3">
           <RenderColor A="255" R="144" G="238" B="144" />
         </AnimationInfo>
         <AnimationInfo Name="default" StartIndex="0" EndIndex="0">

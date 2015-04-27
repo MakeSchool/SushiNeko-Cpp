@@ -19,8 +19,24 @@ bool Character::init()
     }
     
     this->side = Side::Right;
+    this->timeline = CSLoader::createTimeline("Character.csb");
+    this->timeline->retain();
     
     return true;
+}
+
+void Character::onExit()
+{
+    this->timeline->release();
+    
+    Node::onExit();
+}
+
+void Character::runHitAnimation()
+{
+    this->stopAllActions();
+    this->runAction(this->timeline);
+    this->timeline->play("chop", false);
 }
 
 Side Character::getSide()

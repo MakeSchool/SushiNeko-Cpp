@@ -10,6 +10,7 @@
 #define __SushiNeko_Cpp__Character__
 
 #include "cocos2d.h"
+#include "cocostudio/CocoStudio.h"
 
 enum class Side;  // forward declaration for Side enum, declared in MainScene.h
 
@@ -21,11 +22,15 @@ public:
     
     CREATE_FUNC(Character);
     
+    virtual void onExit() override;
+    
+    void runHitAnimation();
     void setSide(Side side);
     Side getSide();
     
 private:
     Side side;
+    cocostudio::timeline::ActionTimeline* timeline;
 };
 
 #endif /* defined(__SushiNeko_Cpp__Character__) */
