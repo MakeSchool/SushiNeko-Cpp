@@ -18,6 +18,9 @@
             <Image Name="roll.png" />
             <Image Name="tap_right.png" />
             <Image Name="tap_left.png" />
+            <File Name="Assets" />
+            <Image Name="gameOver.png" />
+            <Image Name="title.png" />
           </Folder>
           <Folder Name="resources-phonehd">
             <Image Name="background.png" />
@@ -32,6 +35,9 @@
             <Image Name="roll.png" />
             <Image Name="tap_right.png" />
             <Image Name="tap_left.png" />
+            <File Name="Assets" />
+            <Image Name="gameOver.png" />
+            <Image Name="title.png" />
           </Folder>
           <Folder Name="resources-tablet">
             <Image Name="background.png" />
@@ -46,6 +52,8 @@
             <Image Name="roll.png" />
             <Image Name="tap_right.png" />
             <Image Name="tap_left.png" />
+            <Image Name="gameOver.png" />
+            <Image Name="title.png" />
           </Folder>
           <Folder Name="resources-tablethd">
             <Image Name="background.png" />
@@ -60,6 +68,8 @@
             <Image Name="roll.png" />
             <Image Name="tap_right.png" />
             <Image Name="tap_left.png" />
+            <Image Name="gameOver.png" />
+            <Image Name="title.png" />
           </Folder>
         </Folder>
         <Project Name="Character.csd" Type="Node" />

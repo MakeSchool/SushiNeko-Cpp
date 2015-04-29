@@ -43,11 +43,9 @@ bool MainScene::init()
     instance->registReaderObject("CharacterReader", (ObjectFactory::Instance) CharacterReader::getInstance);
     instance->registReaderObject("PieceReader", (ObjectFactory::Instance) PieceReader::getInstance);
     
-    this->timeLeft = 5.0f;
-    this->score = 0;
     this->pieceIndex = 0;
     this->pieceLastSide = Side::Left;
-    this->gameState = GameState::Ready;
+    this->gameState = GameState::Title;
     
     auto rootNode = CSLoader::createNode("MainScene.csb");
     auto lifeBG = rootNode->getChildByName("lifeBG");
@@ -72,9 +70,19 @@ bool MainScene::init()
         this->pieces.pushBack(piece);
     }
     
+    this->resetGameState();
+    
     this->addChild(rootNode);
 
     return true;
+}
+
+void MainScene::resetGameState()
+{
+    this->timeLeft = 5.0f;
+    this->score = 0;
+    Piece* piece = this->pieces.at(this->pieceIndex);
+    piece->setSide(Side::None);
 }
 
 void MainScene::setupTouchHandling()
@@ -85,12 +93,14 @@ void MainScene::setupTouchHandling()
     {
         switch (this->gameState)
         {
-            case GameState::GameOver:
+                
+            case GameState::Title:
+                this->triggerReady();
                 break;
                 
             case GameState::Ready:
                 this->triggerPlaying();
-                break;
+                // No break here!
                 
             case GameState::Playing:
             {
@@ -124,7 +134,9 @@ void MainScene::setupTouchHandling()
             }
                 break;
                 
-            case GameState::Title:
+            case GameState::GameOver:
+                this->resetGameState();
+                this->triggerReady();
                 break;
         }
         
@@ -141,6 +153,8 @@ void MainScene::onEnter()
     this->flyingPiecePosition = this->pieceNode->getPosition();
     
     this->setupTouchHandling();
+    
+    this->triggerTitle();
     
     this->scheduleUpdate();
 }
@@ -166,7 +180,7 @@ void MainScene::update(float dt)
             
         case GameState::Playing:
             
-//            this->setTimeLeft(timeLeft - dt);
+            this->setTimeLeft(timeLeft - dt);
             
             if (this->timeLeft <= 0.0f)
             {
@@ -227,18 +241,51 @@ void MainScene::animateHitPiece(Side obstacleSide)
 #pragma mark -
 #pragma mark Game State Methods
 
+void MainScene::triggerTitle()
+{
+    this->gameState = GameState::Title;
+    
+    cocostudio::timeline::ActionTimeline* titleTimeline = CSLoader::createTimeline("MainScene.csb");
+    this->stopAllActions();
+    this->runAction(titleTimeline);
+    titleTimeline->play("title", false);
+}
+
 void MainScene::triggerReady()
 {
     this->gameState = GameState::Ready;
     
+    auto scene = this->getChildByName("Scene");
     
+    cocos2d::Sprite* tapLeft = scene->getChildByName<cocos2d::Sprite*>("tapLeft");
+    cocos2d::Sprite* tapRight = scene->getChildByName<cocos2d::Sprite*>("tapRight");
+    
+    tapLeft->setOpacity(255);
+    tapRight->setOpacity(255);
+    
+    cocostudio::timeline::ActionTimeline* readyTimeline = CSLoader::createTimeline("MainScene.csb");
+    this->stopAllActions();
+    this->runAction(readyTimeline);
+    readyTimeline->play("ready", true);
 }
 
 void MainScene::triggerPlaying()
 {
     this->gameState = GameState::Playing;
     
+    this->scoreLabel->setVisible(true);
+    
+    auto scene = this->getChildByName("Scene");
+    
     // fade out tap buttons
+    cocos2d::Sprite* tapLeft = scene->getChildByName<cocos2d::Sprite*>("tapLeft");
+    cocos2d::Sprite* tapRight = scene->getChildByName<cocos2d::Sprite*>("tapRight");
+    
+    cocos2d::FadeOut* leftFade = cocos2d::FadeOut::create(0.35f);
+    cocos2d::FadeOut* rightFade = cocos2d::FadeOut::create(0.35f);
+    
+    tapLeft->runAction(leftFade);
+    tapRight->runAction(rightFade);
 }
 
 void MainScene::triggerGameOver()
@@ -247,7 +294,16 @@ void MainScene::triggerGameOver()
     
     this->setTimeLeft(0.0f);
     
-    // load game over screen, display it
+    auto scene = this->getChildByName("Scene");
+    auto mat = scene->getChildByName("mat");
+    cocos2d::ui::Text* gameOverScoreLabel = mat->getChildByName<cocos2d::ui::Text*>("gameOverScoreLabel");
+    
+    gameOverScoreLabel->setString(std::to_string(this->score));
+    
+    cocostudio::timeline::ActionTimeline* gameOverTimeline = CSLoader::createTimeline("MainScene.csb");
+    this->stopAllActions();
+    this->runAction(gameOverTimeline);
+    gameOverTimeline->play("gameOver", false);
 }
 
 #pragma mark -

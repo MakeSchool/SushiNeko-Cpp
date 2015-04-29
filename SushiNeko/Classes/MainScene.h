@@ -44,7 +44,9 @@ public:
 private:
     
     void setupTouchHandling();
+    void resetGameState();
     
+    void triggerTitle();
     void triggerReady();
     void triggerPlaying();
     void triggerGameOver();
