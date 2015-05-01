@@ -18,7 +18,10 @@ bool Character::init()
         return false;
     }
     
-    this->side = Side::Right;
+    // Character starts on the left side
+    this->side = Side::Left;
+    
+    // Load the character animation timeline, 
     this->timeline = CSLoader::createTimeline("Character.csb");
     this->timeline->retain();
     
