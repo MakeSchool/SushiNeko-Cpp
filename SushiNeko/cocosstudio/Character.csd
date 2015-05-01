@@ -1,5 +1,5 @@
 <GameProjectFile>
-  <PropertyGroup Type="Node" Name="Character" ID="772772db-fc2d-4725-ba35-dd07c393c546" Version="2.2.1.0" />
+  <PropertyGroup Type="Node" Name="Character" ID="772772db-fc2d-4725-ba35-dd07c393c546" Version="2.2.5.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="3" Speed="0.5000" ActivedAnimationName="chop">
@@ -20,16 +20,16 @@
         </Timeline>
         <Timeline ActionTag="1871043589" Property="FileData">
           <TextureFrame FrameIndex="0">
-            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character1.png" />
+            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character1.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="1">
-            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character2.png" />
+            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character2.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="2">
-            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character3.png" />
+            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character3.png" Plist="" />
           </TextureFrame>
           <TextureFrame FrameIndex="3">
-            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character1.png" />
+            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character1.png" Plist="" />
           </TextureFrame>
         </Timeline>
       </Animation>
@@ -41,29 +41,21 @@
           <RenderColor A="255" R="112" G="128" B="144" />
         </AnimationInfo>
       </AnimationList>
-      <ObjectData Name="Node" FrameEvent="" CustomClassName="Character" ctype="SingleNodeObjectData">
-        <Position X="0.0000" Y="0.0000" />
-        <Scale ScaleX="1.0000" ScaleY="1.0000" />
-        <AnchorPoint />
-        <CColor A="255" R="255" G="255" B="255" />
-        <Size X="0.0000" Y="0.0000" />
-        <PrePosition X="0.0000" Y="0.0000" />
-        <PreSize X="0.0000" Y="0.0000" />
+      <ObjectData Name="Node" CustomClassName="Character" ctype="GameNodeObjectData">
+        <Size />
         <Children>
-          <NodeObjectData Name="Cat" ActionTag="1871043589" FrameEvent="" Tag="4" LeftMargin="-365.0000" TopMargin="-217.0000" ctype="SpriteObjectData">
-            <Position X="0.0000" Y="0.0000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <AnchorPoint ScaleX="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
+          <AbstractNodeData Name="Cat" ActionTag="1871043589" Tag="4" IconVisible="False" LeftMargin="-365.0000" TopMargin="-217.0000" ctype="SpriteObjectData">
             <Size X="365.0000" Y="217.0000" />
-            <PrePosition X="0.0000" Y="0.0000" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="Assets/resources-phonehd/character1.png" />
-          </NodeObjectData>
+            <AnchorPoint ScaleX="1.0000" />
+            <Position />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition />
+            <PreSize />
+            <FileData Type="Normal" Path="Assets/resources-phonehd/character1.png" Plist="" />
+          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>
-    <CameraPosition ValueX="0.0000" ValueY="5.0000" ValueZ="-1.0000" />
-    <CameraRotation ValueX="0.0000" ValueY="0.0000" ValueZ="0.0000" />
   </Content>
 </GameProjectFile>

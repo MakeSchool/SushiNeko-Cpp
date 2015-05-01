@@ -11,9 +11,17 @@
         <iOS_Target Value="SushiNeko-Cpp iOS" />
         <iOS_BundleID Value="iPhone Developer: Daniel Haaser (4A759FHQVW)" />
         <Platform Value="Android" />
-        <PublishSetting Value="XCode" />
         <FrameworkVersion Value="cocos2d-x-3.5" />
         <IsDebugKeystore Value="True" />
+        <EnableSourceMap Value="False" />
+        <EnableHTML5Advanced Value="False" />
+      </Value>
+    </Item>
+    <Item Key="CocosRecentOperation">
+      <Value ctype="CocosRecentOperation">
+        <LastPublishType Value="XCode" />
+        <IsLastPublish Value="True" />
+        <LastRunType Value="Unknown" />
       </Value>
     </Item>
   </Properties>
