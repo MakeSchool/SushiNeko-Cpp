@@ -20,13 +20,13 @@ public:
     
     CREATE_FUNC(Piece);
     
-    void setSide(Side side);
-    Side getSide();
+    void setObstacleSide(Side side);
+    Side getObstacleSide();
     
     float getSpriteHeight();
     
 private:
-    Side side;
+    Side obstacleSide;
     
     cocos2d::Sprite* left;
     cocos2d::Sprite* right;

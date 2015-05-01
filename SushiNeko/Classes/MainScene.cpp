@@ -61,7 +61,7 @@ bool MainScene::init()
         
         // set chopstick side
         this->pieceLastSide = this->getSideForObstacle(this->pieceLastSide);
-        piece->setSide(this->pieceLastSide);
+        piece->setObstacleSide(this->pieceLastSide);
         
         piece->setPosition(0.0f, piece->getSpriteHeight() / 2.0f * i);
         
@@ -82,7 +82,7 @@ void MainScene::resetGameState()
     this->timeLeft = 5.0f;
     this->score = 0;
     Piece* piece = this->pieces.at(this->pieceIndex);
-    piece->setSide(Side::None);
+    piece->setObstacleSide(Side::None);
 }
 
 void MainScene::setupTouchHandling()
@@ -201,14 +201,14 @@ void MainScene::stepTower()
 {
     Piece* currentPiece = this->pieces.at(this->pieceIndex);
     
-    this->animateHitPiece(currentPiece->getSide());
+    this->animateHitPiece(currentPiece->getObstacleSide());
     
     currentPiece->setPosition(currentPiece->getPosition() + Vec2(0.0f, currentPiece->getSpriteHeight() / 2.0f * 10.0f));
     
     currentPiece->setLocalZOrder(currentPiece->getLocalZOrder() + 1);
     
-    currentPiece->setSide(this->getSideForObstacle(this->pieceLastSide));
-    this->pieceLastSide = currentPiece->getSide();
+    currentPiece->setObstacleSide(this->getSideForObstacle(this->pieceLastSide));
+    this->pieceLastSide = currentPiece->getObstacleSide();
     
     cocos2d::MoveBy* moveAction = cocos2d::MoveBy::create(0.15f, Vec2(0.0f, -1.0f * currentPiece->getSpriteHeight() / 2.0f));
     this->pieceNode->runAction(moveAction);
@@ -225,7 +225,7 @@ void MainScene::animateHitPiece(Side obstacleSide)
         flyingPiece->removeFromParent();
     });
     
-    flyingPiece->setSide(obstacleSide);
+    flyingPiece->setObstacleSide(obstacleSide);
     
     flyingPiece->setPosition(this->flyingPiecePosition);
     this->addChild(flyingPiece);
@@ -365,7 +365,7 @@ bool MainScene::checkGameOver()
     
     Piece* currentPiece = this->pieces.at(this->pieceIndex);
     
-    if (currentPiece->getSide() == this->character->getSide())
+    if (currentPiece->getObstacleSide() == this->character->getSide())
     {
         gameOver = true;
         this->triggerGameOver();

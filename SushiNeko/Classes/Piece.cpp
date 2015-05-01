@@ -18,7 +18,7 @@ bool Piece::init()
         return false;
     }
     
-    this->side = Side::None;
+    this->obstacleSide = Side::None;
     
     return true;
 }
@@ -31,14 +31,14 @@ float Piece::getSpriteHeight()
     return roll->getContentSize().height;
 }
 
-Side Piece::getSide()
+Side Piece::getObstacleSide()
 {
-    return this->side;
+    return this->obstacleSide;
 }
 
-void Piece::setSide(Side side)
+void Piece::setObstacleSide(Side side)
 {
-    this->side = side;
+    this->obstacleSide = side;
     
     auto verticalMovementNode = this->getChildByName("verticalMovement");
     auto roll = verticalMovementNode->getChildByName("roll");
@@ -46,7 +46,7 @@ void Piece::setSide(Side side)
     cocos2d::Sprite* leftChopstick = roll->getChildByName<cocos2d::Sprite*>("leftChopstick");
     cocos2d::Sprite* rightChopstick = roll->getChildByName<cocos2d::Sprite*>("rightChopstick");
     
-    switch (this->side)
+    switch (this->obstacleSide)
     {
         case Side::None:
             leftChopstick->setVisible(false);
