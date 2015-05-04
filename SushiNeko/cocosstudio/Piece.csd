@@ -2,16 +2,16 @@
   <PropertyGroup Type="Node" Name="Piece" ID="40499455-8c7f-426a-8ac0-13549090f541" Version="2.2.5.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="96" Speed="1.0000" ActivedAnimationName="moveRight">
+      <Animation Duration="96" Speed="1.0000" ActivedAnimationName="moveLeft">
         <Timeline ActionTag="-1903783200" Property="Position">
           <PointFrame FrameIndex="1" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
+            <EasingData Type="2" />
           </PointFrame>
           <PointFrame FrameIndex="48" X="800.0000" Y="0.0000">
             <EasingData Type="0" />
           </PointFrame>
           <PointFrame FrameIndex="49" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
+            <EasingData Type="2" />
           </PointFrame>
           <PointFrame FrameIndex="96" X="-800.0000" Y="0.0000">
             <EasingData Type="0" />
@@ -19,13 +19,13 @@
         </Timeline>
         <Timeline ActionTag="-1903783200" Property="Scale">
           <ScaleFrame FrameIndex="1" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
+            <EasingData Type="2" />
           </ScaleFrame>
           <ScaleFrame FrameIndex="48" X="1.0000" Y="1.0000">
             <EasingData Type="0" />
           </ScaleFrame>
           <ScaleFrame FrameIndex="49" X="1.0000" Y="1.0000">
-            <EasingData Type="0" />
+            <EasingData Type="2" />
           </ScaleFrame>
           <ScaleFrame FrameIndex="96" X="1.0000" Y="1.0000">
             <EasingData Type="0" />
@@ -33,13 +33,13 @@
         </Timeline>
         <Timeline ActionTag="-1903783200" Property="RotationSkew">
           <ScaleFrame FrameIndex="1" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
+            <EasingData Type="2" />
           </ScaleFrame>
           <ScaleFrame FrameIndex="48" X="180.0000" Y="180.0000">
             <EasingData Type="0" />
           </ScaleFrame>
           <ScaleFrame FrameIndex="49" X="0.0000" Y="0.0000">
-            <EasingData Type="0" />
+            <EasingData Type="2" />
           </ScaleFrame>
           <ScaleFrame FrameIndex="96" X="-180.0000" Y="-180.0000">
             <EasingData Type="0" />

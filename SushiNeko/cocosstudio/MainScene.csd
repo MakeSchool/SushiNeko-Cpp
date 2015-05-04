@@ -12,25 +12,41 @@
           <BoolFrame FrameIndex="61" Tween="False" Value="True" />
         </Timeline>
         <Timeline ActionTag="-1223049060" Property="Position">
-          <PointFrame FrameIndex="61" X="576.0000" Y="84.0000" />
-          <PointFrame FrameIndex="90" X="640.0000" Y="84.0000" />
-          <PointFrame FrameIndex="120" X="576.0000" Y="84.0000" />
+          <PointFrame FrameIndex="61" X="576.0000" Y="84.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="90" X="640.0000" Y="84.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="120" X="576.0000" Y="84.0000">
+            <EasingData Type="0" />
+          </PointFrame>
         </Timeline>
         <Timeline ActionTag="1169502385" Property="VisibleForFrame">
           <BoolFrame FrameIndex="1" Tween="False" Value="False" />
           <BoolFrame FrameIndex="61" Tween="False" Value="True" />
         </Timeline>
         <Timeline ActionTag="1169502385" Property="Position">
-          <PointFrame FrameIndex="61" X="64.0000" Y="84.0000" />
-          <PointFrame FrameIndex="90" X="0.0000" Y="84.0000" />
-          <PointFrame FrameIndex="120" X="64.0000" Y="84.0000" />
+          <PointFrame FrameIndex="61" X="64.0000" Y="84.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="90" X="0.0000" Y="84.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="120" X="64.0000" Y="84.0000">
+            <EasingData Type="0" />
+          </PointFrame>
         </Timeline>
         <Timeline ActionTag="-1096669189" Property="VisibleForFrame">
           <BoolFrame FrameIndex="1" Tween="False" Value="False" />
         </Timeline>
         <Timeline ActionTag="1515584637" Property="Position">
-          <PointFrame FrameIndex="1" X="320.0000" Y="1344.0000" />
-          <PointFrame FrameIndex="50" X="320.0000" Y="767.9999" />
+          <PointFrame FrameIndex="1" X="320.0000" Y="1344.0000">
+            <EasingData Type="5" />
+          </PointFrame>
+          <PointFrame FrameIndex="50" X="320.0000" Y="767.9999">
+            <EasingData Type="0" />
+          </PointFrame>
         </Timeline>
         <Timeline ActionTag="1515584637" Property="VisibleForFrame">
           <BoolFrame FrameIndex="0" Tween="False" Value="False" />
@@ -38,8 +54,12 @@
           <BoolFrame FrameIndex="61" Tween="False" Value="False" />
         </Timeline>
         <Timeline ActionTag="1590920864" Property="Position">
-          <PointFrame FrameIndex="121" X="320.0000" Y="1920.0000" />
-          <PointFrame FrameIndex="150" X="320.0000" Y="960.0000" />
+          <PointFrame FrameIndex="121" X="320.0000" Y="1920.0000">
+            <EasingData Type="20" />
+          </PointFrame>
+          <PointFrame FrameIndex="150" X="320.0000" Y="960.0000">
+            <EasingData Type="0" />
+          </PointFrame>
         </Timeline>
         <Timeline ActionTag="1590920864" Property="VisibleForFrame">
           <BoolFrame FrameIndex="0" Tween="False" Value="False" />
@@ -63,7 +83,7 @@
           <RenderColor A="255" R="255" G="0" B="255" />
         </AnimationInfo>
         <AnimationInfo Name="gameOver" StartIndex="121" EndIndex="151">
-          <RenderColor A="150" R="250" G="128" B="114" />
+          <RenderColor A="255" R="250" G="128" B="114" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
@@ -78,6 +98,7 @@
             <PrePosition X="0.5000" />
             <PreSize X="1.2000" Y="1.1833" />
             <FileData Type="Normal" Path="Assets/resources-phonehd/background.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="piece" ActionTag="1035923380" Tag="31" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="790.0000" BottomMargin="170.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
             <Size />
@@ -120,6 +141,7 @@
                 <PrePosition X="0.0570" Y="0.5000" />
                 <PreSize X="0.8860" Y="0.5976" />
                 <FileData Type="Normal" Path="Assets/resources-phonehd/life.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
@@ -129,6 +151,7 @@
             <PrePosition X="0.5000" Y="0.9800" />
             <PreSize X="0.4797" Y="0.0854" />
             <FileData Type="Normal" Path="Assets/resources-phonehd/life_bg.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="tapRight" ActionTag="-1223049060" Tag="48" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="387.0000" RightMargin="64.0000" TopMargin="837.5000" BottomMargin="45.5000" ctype="SpriteObjectData">
             <Size X="189.0000" Y="77.0000" />
@@ -139,6 +162,7 @@
             <PrePosition X="0.9000" Y="0.0875" />
             <PreSize X="0.2953" Y="0.0802" />
             <FileData Type="Normal" Path="Assets/resources-phonehd/tap_right.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="tapLeft" ActionTag="1169502385" Tag="52" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="64.0000" RightMargin="387.0000" TopMargin="837.5000" BottomMargin="45.5000" ctype="SpriteObjectData">
             <Size X="189.0000" Y="77.0000" />
@@ -149,6 +173,7 @@
             <PrePosition X="0.1000" Y="0.0875" />
             <PreSize X="0.2953" Y="0.0802" />
             <FileData Type="Normal" Path="Assets/resources-phonehd/tap_left.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="scoreLabel" ActionTag="-1096669189" Tag="101" VisibleForFrame="False" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="293.0000" RightMargin="293.0000" TopMargin="278.5000" BottomMargin="566.5000" FontSize="100" LabelText="0&#xA;" ctype="TextObjectData">
             <Size X="54.0000" Y="115.0000" />
@@ -159,6 +184,8 @@
             <PrePosition X="0.5000" Y="0.6500" />
             <PreSize X="0.1422" Y="0.0240" />
             <FontResource Type="Normal" Path="Game of Three.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="255" G="127" B="80" />
           </AbstractNodeData>
           <AbstractNodeData Name="title" ActionTag="1515584637" Tag="24" VisibleForFrame="False" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="88.5000" RightMargin="88.5000" TopMargin="192.0001" BottomMargin="478.9999" ctype="SpriteObjectData">
             <Size X="463.0000" Y="289.0000" />
@@ -169,6 +196,7 @@
             <PrePosition X="0.5000" Y="0.8000" />
             <PreSize X="0.7234" Y="0.3010" />
             <FileData Type="Normal" Path="Assets/resources-phonehd/title.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="mat" ActionTag="1590920864" Tag="51" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-64.0000" RightMargin="-64.0000" BottomMargin="-176.0000" ctype="SpriteObjectData">
             <Size X="768.0000" Y="1136.0000" />
@@ -182,6 +210,7 @@
                 <PrePosition X="0.5000" Y="0.9000" />
                 <PreSize X="0.6029" Y="0.2588" />
                 <FileData Type="Normal" Path="Assets/resources-phonehd/gameOver.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="gameOverScore" ActionTag="1464353432" Tag="91" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="239.0000" RightMargin="239.0000" TopMargin="487.7800" BottomMargin="533.2200" FontSize="100" LabelText="Score&#xA;" HorizontalAlignmentType="HT_Center" ctype="TextObjectData">
                 <Size X="290.0000" Y="115.0000" />
@@ -192,6 +221,8 @@
                 <PrePosition X="0.5000" Y="0.5200" />
                 <PreSize X="0.0703" Y="0.1012" />
                 <FontResource Type="Normal" Path="Game of Three.ttf" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="255" G="127" B="80" />
               </AbstractNodeData>
               <AbstractNodeData Name="gameOverScoreLabel" ActionTag="-1441433360" Tag="54" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="357.0000" RightMargin="357.0000" TopMargin="578.6600" BottomMargin="442.3400" FontSize="100" LabelText="0&#xA;" HorizontalAlignmentType="HT_Center" ctype="TextObjectData">
                 <Size X="54.0000" Y="115.0000" />
@@ -202,6 +233,8 @@
                 <PrePosition X="0.5000" Y="0.4400" />
                 <PreSize X="0.0703" Y="0.1012" />
                 <FontResource Type="Normal" Path="Game of Three.ttf" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="255" G="127" B="80" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
@@ -211,6 +244,7 @@
             <PrePosition X="0.5000" Y="1.0000" />
             <PreSize X="1.2000" Y="1.1833" />
             <FileData Type="Normal" Path="Assets/resources-phonehd/mat.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="play" ActionTag="735938060" Tag="45" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="218.5000" RightMargin="218.5000" TopMargin="813.0000" BottomMargin="21.0000" FontSize="14" Scale9Width="203" Scale9Height="126" ctype="ButtonObjectData">
             <Size X="203.0000" Y="126.0000" />
@@ -224,6 +258,8 @@
             <DisabledFileData Type="Normal" Path="Assets/resources-phonehd/button.png" Plist="" />
             <PressedFileData Type="Normal" Path="Assets/resources-phonehd/button.png" Plist="" />
             <NormalFileData Type="Normal" Path="Assets/resources-phonehd/button.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="255" G="127" B="80" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
