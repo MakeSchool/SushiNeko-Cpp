@@ -18,11 +18,13 @@ bool Character::init()
         return false;
     }
     
-    // Character starts on the left side
+    // thec character starts on the left side
     this->side = Side::Left;
     
-    // Load the character animation timeline, 
+    // load the character animation timeline
     this->timeline = CSLoader::createTimeline("Character.csb");
+    
+    // retain the character animation timeline so it doesn't get deallocated
     this->timeline->retain();
     
     return true;
@@ -30,6 +32,7 @@ bool Character::init()
 
 void Character::onExit()
 {
+    // release the retain we called in init
     this->timeline->release();
     
     Node::onExit();
@@ -37,8 +40,13 @@ void Character::onExit()
 
 void Character::runHitAnimation()
 {
+    // we have to first stop any of the character's running actions so that we can start a new one
     this->stopAllActions();
+    
+    // we run the timeline so that it gets an update tick every frame
     this->runAction(this->timeline);
+    
+    // tell the timeline to play the chop animation, set loop to false
     this->timeline->play("chop", false);
 }
 
@@ -54,10 +62,14 @@ void Character::setSide(Side side)
     switch (this->side)
     {
         case Side::Right:
+            // swap the character to the right side by setting the scale to -1
+            // which flips it over the y-axis
             this->setScale(-1.0f, 1.0f);
             break;
             
         case Side::Left:
+            // swap the character back to it's original position
+            // by setting scale back to default values
             this->setScale(1.0f, 1.0f);
             break;
             
