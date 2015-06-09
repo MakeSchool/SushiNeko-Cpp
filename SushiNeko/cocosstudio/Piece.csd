@@ -1,5 +1,5 @@
 <GameProjectFile>
-  <PropertyGroup Type="Node" Name="Piece" ID="40499455-8c7f-426a-8ac0-13549090f541" Version="2.2.5.0" />
+  <PropertyGroup Type="Node" Name="Piece" ID="40499455-8c7f-426a-8ac0-13549090f541" Version="2.2.6.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="96" Speed="1.0000" ActivedAnimationName="moveLeft">

@@ -1,5 +1,5 @@
 <GameProjectFile>
-  <PropertyGroup Type="Node" Name="Character" ID="772772db-fc2d-4725-ba35-dd07c393c546" Version="2.2.5.0" />
+  <PropertyGroup Type="Node" Name="Character" ID="772772db-fc2d-4725-ba35-dd07c393c546" Version="2.2.6.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="3" Speed="0.5000" ActivedAnimationName="chop">
