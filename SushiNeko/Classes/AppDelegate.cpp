@@ -26,10 +26,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
-    
-    cocos2d::Size targetSize = glview->getFrameSize();
-    
-    director->getOpenGLView()->setDesignResolutionSize(targetSize.width, targetSize.height, ResolutionPolicy::FIXED_HEIGHT);
+
+    glview->setDesignResolutionSize(640, 960, ResolutionPolicy::FIXED_WIDTH);
     
     // turn on display FPS
     director->setDisplayStats(true);
@@ -40,6 +38,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath("res");
     
     std::vector<std::string> searchResolutionsOrder(1);
+    
+    cocos2d::Size targetSize = glview->getFrameSize();
     
     if (targetSize.height < 481.0f)
     {

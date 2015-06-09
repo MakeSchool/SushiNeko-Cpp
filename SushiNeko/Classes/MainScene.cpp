@@ -50,6 +50,12 @@ bool MainScene::init()
    
     // set up references to instance variables
     auto rootNode = CSLoader::createNode("MainScene.csb");
+    
+    // fix resizing bug
+    Size size = Director::getInstance()->getVisibleSize();
+    rootNode->setContentSize(size);
+    ui::Helper::doLayout(rootNode);
+    
     auto lifeBG = rootNode->getChildByName("lifeBG");
     this->timeBar = lifeBG->getChildByName<Sprite*>("lifeBar");
     this->character = rootNode->getChildByName<Character*>("character");
