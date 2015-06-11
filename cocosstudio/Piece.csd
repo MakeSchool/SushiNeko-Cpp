@@ -2,7 +2,7 @@
   <PropertyGroup Type="Node" Name="Piece" ID="40499455-8c7f-426a-8ac0-13549090f541" Version="2.2.6.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="96" Speed="1.0000" ActivedAnimationName="moveLeft">
+      <Animation Duration="96" Speed="1.0000" ActivedAnimationName="moveRight">
         <Timeline ActionTag="-1903783200" Property="Position">
           <PointFrame FrameIndex="1" X="0.0000" Y="0.0000">
             <EasingData Type="2" />
@@ -134,7 +134,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition Y="0.4000" />
                     <PreSize X="1.0000" Y="0.3714" />
-                    <FileData Type="Normal" Path="Assets/resources-phonehd/chopstick.png" Plist="" />
+                    <FileData Type="Normal" Path="Assets/Images/resources-2x/chopstick.png" Plist="" />
                     <BlendFunc Src="1" Dst="771" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="rightChopstick" ActionTag="-2068788225" Tag="89" VisibleForFrame="False" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="210.0000" RightMargin="-210.0000" TopMargin="101.5000" BottomMargin="52.5000" FlipX="True" ctype="SpriteObjectData">
@@ -145,7 +145,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="1.0000" Y="0.4000" />
                     <PreSize X="1.0000" Y="0.3714" />
-                    <FileData Type="Normal" Path="Assets/resources-phonehd/chopstick.png" Plist="" />
+                    <FileData Type="Normal" Path="Assets/Images/resources-2x/chopstick.png" Plist="" />
                     <BlendFunc Src="1" Dst="771" />
                   </AbstractNodeData>
                 </Children>
@@ -155,7 +155,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize />
-                <FileData Type="Normal" Path="Assets/resources-phonehd/roll.png" Plist="" />
+                <FileData Type="Normal" Path="Assets/Images/resources-2x/roll.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
             </Children>

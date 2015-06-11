@@ -4,32 +4,50 @@
     <Content>
       <Animation Duration="3" Speed="0.5000" ActivedAnimationName="chop">
         <Timeline ActionTag="1871043589" Property="Position">
-          <PointFrame FrameIndex="0" X="0.0000" Y="0.0000" />
-          <PointFrame FrameIndex="1" X="0.0000" Y="0.0000" />
-          <PointFrame FrameIndex="2" X="0.0000" Y="0.0000" />
+          <PointFrame FrameIndex="0" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="1" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </PointFrame>
+          <PointFrame FrameIndex="2" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </PointFrame>
         </Timeline>
         <Timeline ActionTag="1871043589" Property="Scale">
-          <ScaleFrame FrameIndex="0" X="1.0000" Y="1.0000" />
-          <ScaleFrame FrameIndex="1" X="1.0000" Y="1.0000" />
-          <ScaleFrame FrameIndex="2" X="1.0000" Y="1.0000" />
+          <ScaleFrame FrameIndex="0" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="1" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="2" X="1.0000" Y="1.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
         </Timeline>
         <Timeline ActionTag="1871043589" Property="RotationSkew">
-          <ScaleFrame FrameIndex="0" X="0.0000" Y="0.0000" />
-          <ScaleFrame FrameIndex="1" X="0.0000" Y="0.0000" />
-          <ScaleFrame FrameIndex="2" X="0.0000" Y="0.0000" />
+          <ScaleFrame FrameIndex="0" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="1" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
+          <ScaleFrame FrameIndex="2" X="0.0000" Y="0.0000">
+            <EasingData Type="0" />
+          </ScaleFrame>
         </Timeline>
         <Timeline ActionTag="1871043589" Property="FileData">
-          <TextureFrame FrameIndex="0">
-            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character1.png" Plist="" />
+          <TextureFrame FrameIndex="0" Tween="False">
+            <TextureFile Type="Normal" Path="Assets/Images/resources-2x/character1.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="1">
-            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character2.png" Plist="" />
+          <TextureFrame FrameIndex="1" Tween="False">
+            <TextureFile Type="Normal" Path="Assets/Images/resources-2x/character1.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="2">
-            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character3.png" Plist="" />
+          <TextureFrame FrameIndex="2" Tween="False">
+            <TextureFile Type="Normal" Path="Assets/Images/resources-2x/character2.png" Plist="" />
           </TextureFrame>
-          <TextureFrame FrameIndex="3">
-            <TextureFile Type="Normal" Path="Assets/resources-phonehd/character1.png" Plist="" />
+          <TextureFrame FrameIndex="3" Tween="False">
+            <TextureFile Type="Normal" Path="Assets/Images/resources-2x/character3.png" Plist="" />
           </TextureFrame>
         </Timeline>
       </Animation>
@@ -52,7 +70,8 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize />
-            <FileData Type="Normal" Path="Assets/resources-phonehd/character1.png" Plist="" />
+            <FileData Type="Normal" Path="Assets/Images/resources-2x/character1.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

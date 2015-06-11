@@ -43,15 +43,19 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     if (targetSize.height < 481.0f)
     {
-        searchResolutionsOrder[0] = "resources-phone";
+        searchResolutionsOrder[0] = "resources-1x";
     }
     else if (targetSize.height < 1137.0f)
     {
-        searchResolutionsOrder[0] = "resources-phonehd";
+        searchResolutionsOrder[0] = "resources-2x";
+    }
+    else if (targetSize.height < 2047.0f)
+    {
+        searchResolutionsOrder[0] = "resources-3x";
     }
     else
     {
-        searchResolutionsOrder[0] = "resources-tablethd";
+        searchResolutionsOrder[0] = "resources-4x";
     }
     
     FileUtils::getInstance()->setSearchResolutionsOrder(searchResolutionsOrder);
