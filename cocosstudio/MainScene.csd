@@ -100,23 +100,23 @@
             <FileData Type="Normal" Path="Assets/Images/resources-2x/background.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="piece" ActionTag="1035923380" Tag="31" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="790.0000" BottomMargin="170.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="piece" ActionTag="1035923380" Tag="31" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="668.0000" BottomMargin="292.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
             <Size />
             <AnchorPoint />
-            <Position X="320.0000" Y="170.0000" />
+            <Position X="320.0000" Y="292.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.1771" />
+            <PrePosition X="0.5000" Y="0.3042" />
             <PreSize />
             <FileData Type="Normal" Path="Piece.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="pieceNode" ActionTag="-775825522" Tag="95" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="674.0000" BottomMargin="286.0000" ctype="SingleNodeObjectData">
+          <AbstractNodeData Name="pieceNode" ActionTag="-775825522" Tag="95" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="554.0000" BottomMargin="406.0000" ctype="SingleNodeObjectData">
             <Size />
             <AnchorPoint />
-            <Position X="320.0000" Y="286.0000" />
+            <Position X="320.0000" Y="406.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.2979" />
+            <PrePosition X="0.5000" Y="0.4229" />
             <PreSize />
           </AbstractNodeData>
           <AbstractNodeData Name="character" ActionTag="951755214" Tag="35" IconVisible="True" PositionPercentXEnabled="True" LeftMargin="320.0000" RightMargin="320.0000" TopMargin="730.0000" BottomMargin="230.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
