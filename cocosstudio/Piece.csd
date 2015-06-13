@@ -60,7 +60,7 @@
       <ObjectData Name="Node" CustomClassName="Piece" Tag="25" ctype="GameNodeObjectData">
         <Size />
         <Children>
-          <AbstractNodeData Name="roll" ActionTag="-1903783200" Tag="26" Rotation="80.4942" RotationSkewX="80.4942" RotationSkewY="80.4942" IconVisible="False" LeftMargin="431.6278" RightMargin="-641.6278" TopMargin="-256.6570" BottomMargin="11.6570" ctype="SpriteObjectData">
+          <AbstractNodeData Name="roll" ActionTag="-1903783200" Tag="26" IconVisible="False" LeftMargin="-105.0000" RightMargin="-105.0000" TopMargin="-122.5000" BottomMargin="-122.5000" ctype="SpriteObjectData">
             <Size X="210.0000" Y="245.0000" />
             <Children>
               <AbstractNodeData Name="leftChopstick" ActionTag="1635623192" Tag="84" VisibleForFrame="False" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-210.0000" RightMargin="210.0000" TopMargin="101.5000" BottomMargin="52.5000" ctype="SpriteObjectData">
@@ -87,7 +87,7 @@
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="536.6278" Y="134.1570" />
+            <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />

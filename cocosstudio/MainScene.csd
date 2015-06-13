@@ -132,13 +132,13 @@
           <AbstractNodeData Name="lifeBG" ActionTag="-225586348" Tag="46" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="166.5000" RightMargin="166.5000" TopMargin="19.2000" BottomMargin="858.8000" ctype="SpriteObjectData">
             <Size X="307.0000" Y="82.0000" />
             <Children>
-              <AbstractNodeData Name="lifeBar" ActionTag="523644030" Tag="47" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="17.4990" RightMargin="17.5010" TopMargin="16.5000" BottomMargin="16.5000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="lifeBar" ActionTag="523644030" Tag="47" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="17.0000" RightMargin="18.0000" TopMargin="16.5000" BottomMargin="16.5000" ctype="SpriteObjectData">
                 <Size X="272.0000" Y="49.0000" />
                 <AnchorPoint ScaleY="0.5000" />
-                <Position X="17.4990" Y="41.0000" />
-                <Scale ScaleX="0.5000" ScaleY="1.0000" />
+                <Position X="17.0000" Y="41.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0570" Y="0.5000" />
+                <PrePosition X="0.0554" Y="0.5000" />
                 <PreSize X="0.8860" Y="0.5976" />
                 <FileData Type="Normal" Path="Assets/Images/resources-2x/life.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
@@ -175,7 +175,7 @@
             <FileData Type="Normal" Path="Assets/Images/resources-2x/tap_left.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="scoreLabel" ActionTag="-1096669189" Tag="101" VisibleForFrame="False" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="293.0000" RightMargin="293.0000" TopMargin="278.5000" BottomMargin="566.5000" FontSize="100" LabelText="0&#xA;" ctype="TextObjectData">
+          <AbstractNodeData Name="scoreLabel" ActionTag="-1096669189" Tag="101" VisibleForFrame="False" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="293.0000" RightMargin="293.0000" TopMargin="278.5000" BottomMargin="566.5000" FontSize="100" LabelText="0&#xA;" OutlineSize="5" ctype="TextObjectData">
             <Size X="54.0000" Y="115.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.0000" Y="624.0000" />
@@ -184,7 +184,7 @@
             <PrePosition X="0.5000" Y="0.6500" />
             <PreSize X="0.1422" Y="0.0240" />
             <FontResource Type="Normal" Path="Assets/Fonts/Game of Three.ttf" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
+            <OutlineColor A="255" R="0" G="0" B="0" />
             <ShadowColor A="255" R="255" G="127" B="80" />
           </AbstractNodeData>
           <AbstractNodeData Name="title" ActionTag="1515584637" Tag="24" VisibleForFrame="False" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="88.5000" RightMargin="88.5000" TopMargin="192.0001" BottomMargin="478.9999" ctype="SpriteObjectData">
