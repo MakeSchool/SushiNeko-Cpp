@@ -28,7 +28,7 @@ public:
     void setSide(Side side);
     Side getSide();
     
-private:
+protected:
     Side side;
     cocostudio::timeline::ActionTimeline* timeline;
 };

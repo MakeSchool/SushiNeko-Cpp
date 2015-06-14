@@ -25,7 +25,7 @@ public:
     
     float getSpriteHeight();
     
-private:
+protected:
     Side obstacleSide;
     
     cocos2d::Sprite* left;
