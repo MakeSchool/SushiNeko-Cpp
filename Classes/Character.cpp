@@ -9,7 +9,7 @@
 #include "Character.h"
 #include "MainScene.h"
 
-USING_NS_CC;
+using namespace cocos2d;
 
 bool Character::init()
 {

@@ -10,9 +10,7 @@
 #define __SushiNeko_Cpp__CharacterReader__
 
 #include "cocos2d.h"
-#include "cocostudio/CocosStudioExport.h"
 #include "cocostudio/WidgetReader/NodeReader/NodeReader.h"
-#include "Character.h"
 
 class CharacterReader : public cocostudio::NodeReader
 {

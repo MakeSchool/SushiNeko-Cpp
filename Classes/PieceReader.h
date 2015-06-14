@@ -10,8 +10,6 @@
 #define __SushiNeko_Cpp__PieceReader__
 
 #include "cocos2d.h"
-#include "Piece.h"
-#include "cocostudio/CocosStudioExport.h"
 #include "cocostudio/WidgetReader/NodeReader/NodeReader.h"
 
 class PieceReader : public cocostudio::NodeReader

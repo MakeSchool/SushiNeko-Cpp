@@ -7,8 +7,9 @@
 //
 
 #include "PieceReader.h"
+#include "Piece.h"
 
-USING_NS_CC;
+using namespace cocos2d;
 
 static PieceReader* _instancePieceReader = nullptr;
 
