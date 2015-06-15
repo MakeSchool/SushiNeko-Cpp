@@ -30,13 +30,10 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(MainScene);
     
-    virtual void onEnter() override;
-    
-    virtual void onExit() override;
-    
-    virtual void update(float dt) override;
-    
 private:
+    void onEnter() override;
+    void onExit() override;
+    void update(float dt) override;
     
     void setupTouchHandling();
     void resetGameState();
