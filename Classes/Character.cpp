@@ -58,21 +58,12 @@ void Character::setSide(Side side)
 {
     this->side = side;
     
-    switch (this->side)
+    if (this->side == Side::Right)
     {
-        case Side::Right:
-            // swap the character to the right side by setting the scale to -1
-            // which flips it over the y-axis
-            this->setScale(-1.0f, 1.0f);
-            break;
-            
-        case Side::Left:
-            // swap the character back to it's original position
-            // by setting scale back to default values
-            this->setScale(1.0f, 1.0f);
-            break;
-            
-        case Side::None:
-            break;
+        this->setScaleX(-1.0f);
+    }
+    else
+    {
+        this->setScaleX(1.0f);
     }
 }
