@@ -5,13 +5,6 @@
 #include "ui/CocosGUI.h"
 #include "Piece.h"
 
-enum class Side
-{
-    Left,
-    Right,
-    None
-};
-
 enum class GameState
 {
     Title,
@@ -23,6 +16,7 @@ enum class GameState
 // forward declarations
 class Character;
 class Piece;
+enum class Side;
 
 class MainScene : public cocos2d::Layer
 {

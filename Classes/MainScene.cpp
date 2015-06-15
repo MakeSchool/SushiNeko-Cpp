@@ -5,6 +5,7 @@
 #include "CharacterReader.h"
 #include "Piece.h"
 #include "PieceReader.h"
+#include "Constants.h"
 
 USING_NS_CC;
 

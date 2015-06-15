@@ -7,7 +7,7 @@
 //
 
 #include "Piece.h"
-#include "MainScene.h"
+#include "Constants.h"
 
 using namespace cocos2d;
 
