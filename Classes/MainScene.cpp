@@ -73,7 +73,8 @@ bool MainScene::init()
         this->pieceLastSide = this->getSideForObstacle(this->pieceLastSide);
         piece->setObstacleSide(this->pieceLastSide);
         
-        piece->setPosition(0.0f, piece->getSpriteHeight() / 2.0f * i);
+        float rollHeight = piece->getSpriteHeight();
+        piece->setPosition(0.0f, rollHeight / 2.0f * i);
         
         this->pieceNode->addChild(piece);
         

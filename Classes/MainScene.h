@@ -22,6 +22,7 @@ enum class GameState
 
 // forward declarations
 class Character;
+class Piece;
 
 class MainScene : public cocos2d::Layer
 {
