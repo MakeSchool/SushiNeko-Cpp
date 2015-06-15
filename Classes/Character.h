@@ -11,8 +11,7 @@
 
 #include "cocos2d.h"
 #include "cocostudio/CocoStudio.h"
-
-enum class Side;  // forward declaration for Side enum, declared in MainScene.h
+#include "Constants.h"
 
 class Character : public cocos2d::Node
 

@@ -7,7 +7,6 @@
 //
 
 #include "Character.h"
-#include "Constants.h"
 
 using namespace cocos2d;
 
