@@ -46,7 +46,7 @@ bool MainScene::init()
     instance->registReaderObject("PieceReader", (ObjectFactory::Instance) PieceReader::getInstance);
     
     this->pieceIndex = 0;
-    this->pieceLastSide = Side::Left;
+    this->lastObstacleSide = Side::Left;
     this->gameState = GameState::Title;
    
     // set up references to instance variables
@@ -71,8 +71,8 @@ bool MainScene::init()
         Piece* piece = dynamic_cast<Piece*>(CSLoader::createNode("Piece.csb"));
         
         // set chopstick side
-        this->pieceLastSide = this->getSideForObstacle(this->pieceLastSide);
-        piece->setObstacleSide(this->pieceLastSide);
+        this->lastObstacleSide = this->getSideForObstacle(this->lastObstacleSide);
+        piece->setObstacleSide(this->lastObstacleSide);
         
         float rollHeight = piece->getSpriteHeight();
         piece->setPosition(0.0f, rollHeight / 2.0f * i);
@@ -250,8 +250,8 @@ void MainScene::stepTower()
     currentPiece->setLocalZOrder(currentPiece->getLocalZOrder() + 1);
     
     // set the side of the obstacle, based on the side of the obstacle of the piece right before this one
-    currentPiece->setObstacleSide(this->getSideForObstacle(this->pieceLastSide));
-    this->pieceLastSide = currentPiece->getObstacleSide();
+    currentPiece->setObstacleSide(this->getSideForObstacle(this->lastObstacleSide));
+    this->lastObstacleSide = currentPiece->getObstacleSide();
     
     // animate all the pieces down
     cocos2d::MoveBy* moveAction = cocos2d::MoveBy::create(0.15f, Vec2(0.0f, -1.0f * currentPiece->getSpriteHeight() / 2.0f));

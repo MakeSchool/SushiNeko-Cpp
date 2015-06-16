@@ -54,7 +54,7 @@ private:
     int score;
     int pieceIndex;
     cocos2d::Vec2 flyingPiecePosition;
-    Side pieceLastSide;
+    Side lastObstacleSide;
     GameState gameState;
     
     cocos2d::Sprite* timeBar;
