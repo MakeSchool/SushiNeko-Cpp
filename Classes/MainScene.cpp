@@ -142,8 +142,9 @@ void MainScene::setupTouchHandling()
                 
                 // check if the character got moved into an obstacle
                 // if it did, then end the game and return
-                if (this->checkGameOver())
+                if (this->isGameOver())
                 {
+                    this->triggerGameOver();
                     return true;
                 }
                 
@@ -155,8 +156,9 @@ void MainScene::setupTouchHandling()
                 
                 // check if an obstacle moved down onto the character
                 // if it did, then end the game and return
-                if (this->checkGameOver())
+                if (this->isGameOver())
                 {
+                    this->triggerGameOver();
                     return true;
                 }
                 
@@ -446,7 +448,7 @@ Side MainScene::getSideForObstacle(Side lastSide)
     return side;
 }
 
-bool MainScene::checkGameOver()
+bool MainScene::isGameOver()
 {
     bool gameOver = false;
     
@@ -457,7 +459,6 @@ bool MainScene::checkGameOver()
     if (currentPiece->getObstacleSide() == this->character->getSide())
     {
         gameOver = true;
-        this->triggerGameOver();
     }
     
     return gameOver;

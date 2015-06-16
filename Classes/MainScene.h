@@ -48,7 +48,7 @@ private:
     void setTimeLeft(float timeLeft);
     void setScore(int score);
     Side getSideForObstacle(Side lastSide);
-    bool checkGameOver();
+    bool isGameOver();
     
     float timeLeft;
     int score;
