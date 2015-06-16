@@ -96,8 +96,8 @@ void MainScene::resetGameState()
     this->score = 0;
     
     // make sure the lowest peice doesn't have an obstacle when the new game starts
-    Piece* piece = this->pieces.at(this->pieceIndex);
-    piece->setObstacleSide(Side::None);
+    Piece* currentPiece = this->pieces.at(this->pieceIndex);
+    currentPiece->setObstacleSide(Side::None);
 }
 
 void MainScene::setupTouchHandling()
