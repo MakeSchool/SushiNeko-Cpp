@@ -46,8 +46,8 @@ void Piece::setObstacleSide(Side side)
     Sprite* roll = this->getChildByName<Sprite*>("roll");
     
     // get references to the chopstick sprites on the left and right sides
-    cocos2d::Sprite* leftChopstick = roll->getChildByName<cocos2d::Sprite*>("leftChopstick");
-    cocos2d::Sprite* rightChopstick = roll->getChildByName<cocos2d::Sprite*>("rightChopstick");
+    Sprite* leftChopstick = roll->getChildByName<Sprite*>("leftChopstick");
+    Sprite* rightChopstick = roll->getChildByName<Sprite*>("rightChopstick");
     
     // turn on the appropriate chopstick visiblity depending on the side the obstacle should appear on
     switch (this->obstacleSide)
