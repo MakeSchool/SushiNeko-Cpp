@@ -93,7 +93,7 @@ void MainScene::resetGameState()
 {
     // these variables must be reset every new game
     this->timeLeft = 5.0f;
-    this->score = 0;
+    this->setScore(0);
     
     // make sure the lowest peice doesn't have an obstacle when the new game starts
     Piece* currentPiece = this->pieces.at(this->pieceIndex);
