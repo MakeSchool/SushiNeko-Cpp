@@ -202,15 +202,6 @@ void MainScene::onEnter()
     this->scheduleUpdate();
 }
 
-void MainScene::onExit()
-{
-    // unschedule the update method as the scene is ending
-    this->unscheduleUpdate();
-    
-    // call the superclass method onExit
-    Layer::onExit();
-}
-
 #pragma mark -
 #pragma mark Game Loop
 

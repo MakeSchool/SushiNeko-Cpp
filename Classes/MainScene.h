@@ -32,7 +32,6 @@ public:
     
 private:
     void onEnter() override;
-    void onExit() override;
     void update(float dt) override;
     
     void setupTouchHandling();
