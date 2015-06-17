@@ -393,7 +393,7 @@ void MainScene::setTimeLeft(float timeLeft)
     this->timeLeft = clampf(timeLeft, 0.0f, 10.0f);
     
     // update the UI to reflect the correct time left
-    this->timeBar->setScale(timeLeft / 10.0f, 1.0f);
+    this->timeBar->setScaleX(timeLeft / 10.0f);
 }
 
 void MainScene::setScore(int score)
