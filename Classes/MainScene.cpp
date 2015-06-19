@@ -149,7 +149,7 @@ void MainScene::setupTouchHandling()
                 }
                 
                 // run the chop animation to chop the roll
-                this->character->runHitAnimation();
+                this->character->runChopAnimation();
                 
                 // move the roll pieces down
                 this->stepTower();

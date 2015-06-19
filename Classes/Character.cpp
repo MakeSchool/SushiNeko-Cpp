@@ -37,7 +37,7 @@ void Character::onExit()
     Node::onExit();
 }
 
-void Character::runHitAnimation()
+void Character::runChopAnimation()
 {
     // we have to first stop any of the character's running actions so that we can start a new one
     this->stopAllActions();

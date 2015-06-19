@@ -17,13 +17,13 @@ class Character : public cocos2d::Node
 
 {
 public:
-    virtual bool init() override;
+    bool init() override;
     
     CREATE_FUNC(Character);
     
-    virtual void onExit() override;
+    void onExit() override;
     
-    void runHitAnimation();
+    void runChopAnimation();
     void setSide(Side side);
     Side getSide();
     
