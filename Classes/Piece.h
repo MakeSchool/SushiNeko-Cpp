@@ -26,9 +26,7 @@ public:
     
 protected:
     Side obstacleSide;
-    
-    cocos2d::Sprite* left;
-    cocos2d::Sprite* right;
+
 };
 
 #endif /* defined(__SushiNeko_Cpp__Piece__) */
