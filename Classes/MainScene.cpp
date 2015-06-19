@@ -259,6 +259,13 @@ void MainScene::animateHitPiece(Side obstacleSide)
     // load a new piece from CSLoader
     Piece* flyingPiece = dynamic_cast<Piece*>(CSLoader::createNode("Piece.csb"));
     
+    // make sure the flying piece obstacle matches the correct side of the real one
+    flyingPiece->setObstacleSide(obstacleSide);
+    
+    // set the position and add it to the scene
+    flyingPiece->setPosition(this->flyingPiecePosition);
+    this->addChild(flyingPiece);
+    
     // load the piece's animation timeline
     cocostudio::timeline::ActionTimeline* pieceTimeline = CSLoader::createTimeline("Piece.csb");
     
@@ -266,13 +273,6 @@ void MainScene::animateHitPiece(Side obstacleSide)
     pieceTimeline->setLastFrameCallFunc([flyingPiece]() {
         flyingPiece->removeFromParent();
     });
-    
-    // make sure the flying piece obstacle matches the correct side of the real one
-    flyingPiece->setObstacleSide(obstacleSide);
-    
-    // set the position and add it to the scene
-    flyingPiece->setPosition(this->flyingPiecePosition);
-    this->addChild(flyingPiece);
     
     // get the side the character is on
     Side characterSide = this->character->getSide();
