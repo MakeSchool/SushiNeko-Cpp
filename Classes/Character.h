@@ -25,7 +25,7 @@ public:
     
     void runChopAnimation();
     void setSide(Side side);
-    Side getSide();
+    Side getSide() const;
     
 protected:
     Side side;

@@ -46,8 +46,8 @@ private:
     void animateHitPiece(Side obstacleSide);
     void setTimeLeft(float timeLeft);
     void setScore(int score);
-    Side getSideForObstacle(Side lastSide);
-    bool isGameOver();
+    Side getSideForObstacle(Side lastSide) const;
+    bool isGameOver() const;
     
     float timeLeft;
     int score;

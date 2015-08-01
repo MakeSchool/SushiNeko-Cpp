@@ -399,7 +399,7 @@ void MainScene::setScore(int score)
 #pragma mark -
 #pragma mark Utility
 
-Side MainScene::getSideForObstacle(Side lastSide)
+Side MainScene::getSideForObstacle(Side lastSide) const
 {
     Side side;
     
@@ -439,7 +439,7 @@ Side MainScene::getSideForObstacle(Side lastSide)
     return side;
 }
 
-bool MainScene::isGameOver()
+bool MainScene::isGameOver() const
 {
     bool gameOver = false;
     

@@ -23,7 +23,7 @@ bool Piece::init()
     return true;
 }
 
-float Piece::getSpriteHeight()
+float Piece::getSpriteHeight() const
 {
     // this helper method returns the height of the actual displayed sprite
     
@@ -34,7 +34,7 @@ float Piece::getSpriteHeight()
     return roll->getContentSize().height;
 }
 
-Side Piece::getObstacleSide()
+Side Piece::getObstacleSide() const
 {
     return this->obstacleSide;
 }

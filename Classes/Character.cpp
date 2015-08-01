@@ -49,7 +49,7 @@ void Character::runChopAnimation()
     this->timeline->play("chop", false);
 }
 
-Side Character::getSide()
+Side Character::getSide() const
 {
     return this->side;
 }

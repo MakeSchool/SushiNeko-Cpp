@@ -20,9 +20,9 @@ public:
     CREATE_FUNC(Piece);
     
     void setObstacleSide(Side side);
-    Side getObstacleSide();
+    Side getObstacleSide() const;
     
-    float getSpriteHeight();
+    float getSpriteHeight() const;
     
 protected:
     Side obstacleSide;
