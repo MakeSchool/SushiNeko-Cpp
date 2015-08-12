@@ -270,8 +270,8 @@ void MainScene::animateHitPiece(Side obstacleSide)
     cocostudio::timeline::ActionTimeline* pieceTimeline = CSLoader::createTimeline("Piece.csb");
     
     // on the last frame of the animation, remove the piece from the scene
-    pieceTimeline->setLastFrameCallFunc([flyingPiece]() {
-        flyingPiece->removeFromParent();
+    pieceTimeline->setLastFrameCallFunc([this, &flyingPiece]() {
+        this->removeChild(flyingPiece);
     });
     
     // get the side the character is on
