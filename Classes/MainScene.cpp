@@ -366,7 +366,7 @@ void MainScene::triggerGameOver()
     cocos2d::ui::Text* gameOverScoreLabel = mat->getChildByName<cocos2d::ui::Text*>("gameOverScoreLabel");
     
     // set the score label to the user's score
-    gameOverScoreLabel->setString(std::to_string(this->score));
+    gameOverScoreLabel->setString(StringUtils::format("%i", this->score));
     
     // load and run the game over animations
     cocostudio::timeline::ActionTimeline* gameOverTimeline = CSLoader::createTimeline("MainScene.csb");
@@ -393,7 +393,7 @@ void MainScene::setScore(int score)
     this->score = score;
     
     // update the score label
-    this->scoreLabel->setString(std::to_string(this->score));
+    this->scoreLabel->setString(StringUtils::format("%i", this->score));
 }
 
 #pragma mark -
