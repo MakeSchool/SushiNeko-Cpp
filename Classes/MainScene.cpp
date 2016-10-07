@@ -69,6 +69,7 @@ bool MainScene::init()
     for (int i = 0; i < 10; ++i)
     {
         Piece* piece = dynamic_cast<Piece*>(CSLoader::createNode("Piece.csb"));
+        piece->setLocalZOrder(i);
         
         // set chopstick side
         this->lastObstacleSide = this->getSideForObstacle(this->lastObstacleSide);
@@ -240,7 +241,7 @@ void MainScene::stepTower()
     currentPiece->setPosition(currentPiece->getPosition() + Vec2(0.0f, currentPiece->getSpriteHeight() / 2.0f * 10.0f));
     
     // set the zOrder of the piece so that it appears on top of the others
-    currentPiece->setLocalZOrder(currentPiece->getLocalZOrder() + 1);
+    currentPiece->setLocalZOrder(currentPiece->getLocalZOrder() + 10);
     
     // set the side of the obstacle, based on the side of the obstacle of the piece right before this one
     currentPiece->setObstacleSide(this->getSideForObstacle(this->lastObstacleSide));
